@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--先引入css库文件-->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css"/>
+    <!--自己写的less文件-->
+    <link rel="stylesheet/less" href="css/category_product_list.less"/>
+    <link rel="stylesheet/less" href="css/common.less"/>
+    <!--引入less.js这个文件会帮我们进行less文件编译,生成css内容less.js
+    这个文件的引入,一定要在我们自己写的less文件之后-->
+    <!--浏览器根本识别不了less文件,需要进行编译-->
+    <!--1,使用less.js进行编译-->
+    <!--2,使用编辑工具webstorm带的编译功能-->
+    <script type="text/javascript" src="libs/less/less.js"></script>
+    <script type="text/html" id="tmp_product_list">
+        {{each result as value i}}
+        <div class="media">
+            <div class="media-left">
+                <a href="category_product_detail.html?productId={{value.productId}}">
+                    {{#value.productImg}}
+                </a>
+            </div>
+            <div class="media-body">
+                <div class="media-heading">
+                    <p>{{value.productName}}</p>
+                    <span>{{value.productPrice}}</span>
+                </div>
+                <div class="from">
+                    <span class="form-id">{{value.productQuote}}</span>
+                    <span class="comment">有{{value.productCom}}</span>
+                </div>
+
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <title>慢慢买首页</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+</header>
+<!--搜索-->
+<section id="search">
+</section>
+<!--产品介绍-->
+<section id="catergory-product">
+    <div class="recommend-list">
+    </div>
+    <div class="page-list">
+        <div class="page-prev">上一页</div>
+        <div id="page-select">
+            <select>
+            </select>
+        </div>
+        <div class="page-next">下一页</div>
+    </div>
+
+</section>
+<!--底部-->
+<footer id="footer">
+</footer>
+</body>
+<!--bootstrap.js是依赖于jquery.js所以需先要引入jquery.js
+bootstrap.css jquery.js bootstrap.js这个三个文件顺序不能错
+jquery.js bootstrap.js 这两个文件的引入最好放在文档的末尾处
+-->
+<script type="text/javascript" src="libs/jquery/jquery.js"></script>
+<script type="text/javascript" src="libs/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script type="text/javascript" src="js/category_product_list.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+
+</html>

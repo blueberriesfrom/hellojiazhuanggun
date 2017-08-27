@@ -1,0 +1,41 @@
+#couponproduct{
+  padding-top: 20px;
+  .media{
+    padding: 10px 10px;
+    .media-left{
+      a{
+        img{
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+    .media-body{
+      position: relative;
+      &::before{
+        content: "";
+        width: 12px;
+        height: 18px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: tranlateY(-50%);
+        background-image: url("../images/right.png");
+      }
+      .media-heading{
+        font-size: 18px;
+        height: 50px;
+        line-height: 25px;
+        overflow: hidden;
+      }
+      span{
+        font-size: 14px;
+        line-height: 30px;
+      }
+      .usetime{
+        font-size: 16px;
+      }
+    }
+
+  }
+}

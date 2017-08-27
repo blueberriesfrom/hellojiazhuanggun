@@ -1,0 +1,129 @@
+#savemonylist {
+  padding: 15px 10px;
+}
+#savemonylist .savemony .savemoneydetail .productintro {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+}
+#savemonylist .savemony .savemoneydetail .price {
+  color: #ff841d;
+  font-size: 16px;
+  line-height: 30px;
+}
+#savemonylist .savemony .savemoneydetail .introcFrom {
+  color: #999999;
+  padding-bottom: 10px;
+}
+#savemonylist .savemony .savemoneydetail .introcFrom span {
+  margin-right: 10px;
+}
+#savemonylist .savemony .savemoneydetail .detail-content {
+  display: flex;
+  overflow: hidden;
+}
+#savemonylist .savemony .savemoneydetail .detail-content p {
+  padding-right: 15px;
+  flex: 1;
+  font-size: 18px;
+  line-height: 26px;
+  height: 220px;
+}
+#savemonylist .savemony .savemoneydetail .detail-content img {
+  float: right;
+  width: 120px;
+  height: 220px;
+}
+#savemonylist .savemony .savemoneydetail .detail-img {
+  margin-bottom: 20px;
+  padding-top: 30px;
+}
+#savemonylist .savemony .savemoneydetail .detail-img img {
+  width: 220px;
+  height: 220px;
+  display: block;
+  margin: auto;
+}
+#savemonylist .savebuy {
+  display: block;
+  width: 100%;
+  background-color: #ff841d;
+  color: white;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+#saveweima {
+  border-top: 20px solid #f2f2f2;
+  border-bottom: 20px solid #f2f2f2;
+}
+#saveweima img {
+  width: 100%;
+  height: 120px;
+}
+#moneycomment > .cu-content-pl > .tit {
+  font-size: 18px;
+  padding: 8px;
+}
+#moneycomment > .cu-content-pl > .reply {
+  padding: 8px;
+}
+#moneycomment > .cu-content-pl > .reply > .form {
+  border: 1px solid #eceae8;
+}
+#moneycomment > .cu-content-pl > .reply > .form #ctl00_ContentBody_txt_nr {
+  width: 100%;
+  height: 80px;
+  resize: none;
+  outline: 0;
+  border: none;
+}
+#moneycomment > .cu-content-pl > .reply > .form .ctrl {
+  background-color: #fbfbfb;
+  overflow: hidden;
+  border-top: 1px solid #f2f2f2;
+}
+#moneycomment > .cu-content-pl > .reply > .form .ctrl #ctl00_ContentBody_Button1 {
+  float: right;
+  width: 100px;
+  height: 40px;
+  background-color: #ff841d;
+  color: white;
+  outline: none;
+  border: 0;
+  font-size: 18px;
+}
+#moneycomment > .cu-content-pl > .list ul {
+  padding-left: 10px;
+  list-style: none;
+}
+#moneycomment > .cu-content-pl > .list ul > .ui-border-b {
+  display: flex;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+#moneycomment > .cu-content-pl > .list ul > .ui-border-b .userimg {
+  float: left;
+}
+#moneycomment > .cu-content-pl > .list ul > .ui-border-b .userimg img {
+  width: 40px;
+  height: 40px;
+}
+#moneycomment > .cu-content-pl > .list ul > .ui-border-b .con {
+  float: left;
+  margin-left: 20px;
+  flex: 1;
+}
+#moneycomment > .cu-content-pl > .list ul > .ui-border-b .con .name .username {
+  float: left;
+}
+#moneycomment > .cu-content-pl > .list ul > .ui-border-b .con .name .time {
+  float: right;
+}
+#moneycomment > .cu-content-pl > .list ul > .ui-border-b .con .content {
+  padding-top: 10px;
+  height: 50px;
+  overflow: hidden;
+}

@@ -1,0 +1,65 @@
+@import url(color.less);
+
+#inlanddiscount{
+  display: flex;
+  flex-wrap: wrap;
+  .discount-list{
+    padding-top: 10px;
+    width: 50%;
+    border-bottom: 1px solid #f2f2f2;
+    &:nth-of-type(odd){
+      border-right: 1px solid #f2f2f2;
+    }
+    a{
+      display: block;
+      padding-bottom: 10px;
+      img{
+        width: 140px;
+        height: 140px;
+        display: block;
+        margin: auto;
+
+      }
+    }
+    p{
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 25px;
+      height: 53px;
+      overflow: hidden;
+      display: block;
+      padding: 0 10px;
+    }
+    .discount-price{
+      padding-left: 10px;
+      color: @background-color;
+      padding-bottom: 10px;
+    }
+    .discountFrom,.discount-time{
+      color: #a1a1a1;
+      padding-left: 10px;
+      line-height: 15px;
+      line-height: 25px;
+    }
+  }
+}
+
+
+
+#holdon{
+  background-color: #f2f2f2;
+  padding-top: 15px;
+  padding-bottom: 85px;
+  .holdon-img{
+    height: 35px;
+    background-color: #f8f8f8;
+    width: 100%;
+    img{
+      width: 35px;
+      height: 35px;
+      margin: auto;
+      display: block;
+    }
+  }
+
+}

@@ -1,0 +1,85 @@
+#nav {
+  margin-bottom: 10px;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+}
+#nav ul {
+  list-style: none;
+  height: 40px;
+  margin-left: -30px;
+  width: 1050px;
+}
+#nav ul li {
+  float: left;
+  height: 40px;
+}
+#nav ul li a {
+  color: #333333;
+  padding: 5px;
+  margin-right: 20px;
+  font-size: 18px;
+}
+#nav ul li .active {
+  color: red;
+  border-bottom: 2px solid red;
+}
+#baicilist .baicaiproduct .media {
+  margin-bottom: 25px;
+}
+#baicilist .baicaiproduct .media .media-left a img {
+  width: 100px;
+  height: 100px;
+}
+#baicilist .baicaiproduct .media .media-body {
+  font-size: 25px;
+  color: red;
+  position: relative;
+}
+#baicilist .baicaiproduct .media .media-body .media-heading {
+  font-size: 18px;
+  line-height: 22px;
+  height: 40px;
+  overflow: hidden;
+  color: #333333;
+  margin-bottom: 0;
+}
+#baicilist .baicaiproduct .media .media-body i,
+#baicilist .baicaiproduct .media .media-body em {
+  font-size: 16px;
+  margin-right: 10px;
+  line-height: 16px;
+}
+#baicilist .baicaiproduct .media .media-body del {
+  font-size: 14px;
+  color: #a8a8a8;
+  margin-left: 15px;
+}
+#baicilist .baicaiproduct .media .media-body a {
+  display: block;
+  font-size: 14px;
+  color: red;
+  border: 1px dashed red;
+  padding: 2px;
+  text-align: center;
+  width: 130px;
+}
+#baicilist .baicaiproduct .media .media-body a:last-of-type {
+  position: absolute;
+  bottom: 36px;
+  right: 0;
+  background-color: #ff5e5d;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+#baicilist .baicaiproduct .media .media-body .bar .goquan {
+  width: 0;
+  height: 0;
+  border: 0;
+}
+#baicilist .baicaiproduct .media .media-body .bar i,
+#baicilist .baicaiproduct .media .media-body .bar b {
+  color: #333333;
+  font-size: 14px;
+}

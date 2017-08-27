@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--先引入css库文件-->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css"/>
+    <!--自己写的less文件-->
+    <link rel="stylesheet/less" href="css/coupon.less"/>
+    <link rel="stylesheet/less" href="css/common.less"/>
+    <script type="text/javascript" src="libs/less/less.js"></script>
+    <script type="text/html" id="couponList">
+        <div class="row">
+            {{each result as value i}}
+            <div class="col-xs-4">
+                <a href="couponproduct.html?couponid={{value.couponId}}">
+                    <img src="{{value.couponImg}}"/>
+                    <p>{{value.couponTitle}}</p>
+                </a>
+            </div>
+            {{/each}}
+        </div>
+</script>
+    <title>优惠券</title>
+</head>
+<body>
+<!--头部-->
+<header id="header" class="back"></header>
+<div id="coponlist">
+</div>
+<nav id="couponnav">
+    <ol class="breadcrumb">
+        <li>
+            <a href="index.html">首页</a>
+        </li>
+        <li class="active">慢慢</li>
+    </ol>
+</nav>
+<footer id="footer">
+</footer>
+</body>
+<script type="text/javascript" src="libs/jquery/jquery.js"></script>
+<script type="text/javascript" src="libs/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script type="text/javascript" src="./js/coupon.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+
+</html>

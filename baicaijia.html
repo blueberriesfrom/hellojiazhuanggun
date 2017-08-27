@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--先引入css库文件-->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css"/>
+    <!--自己写的less文件-->
+    <link rel="stylesheet/less" href="css/baicaijia.less"/>
+    <link rel="stylesheet/less" href="css/common.less"/>
+    <script type="text/javascript" src="libs/less/less.js"></script>
+    <script type="text/html" id="baicaijianav">
+        <ul>
+            {{each result as value i}}
+            <li>
+                <a data-title-id={{value.titleId}} href="#">{{value.title}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    </script>
+    <script type="text/html" id="baicaijialist">
+        <div class="baicaiproduct">
+            {{each result as value i}}
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        {{#value.productImg}}
+                    </a>
+                </div>
+                <div class="media-body">
+                    <div class="media-heading">
+                        {{#value.productName}}
+                    </div>
+                    {{#value.productPrice}}
+                    {{#value.productCoupon}}
+                    {{#value.productCouponRemain}}
+                    {{#value.productHref}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+    <title>白菜价-淘宝内部劵</title>
+</head>
+<body>
+<!--头部-->
+<header id="header" class="back">
+</header>
+<nav id="nav">
+</nav>
+<section id="baicilist">
+
+
+</section>
+<!--底部-->
+<footer id="footer">
+</footer>
+</body>
+<script type="text/javascript" src="libs/jquery/jquery.js"></script>
+<script type="text/javascript" src="libs/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script type="text/javascript" src="./js/baicaijia.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet/less" href="css/moneyctrl_detail.less"/>
+    <link rel="stylesheet/less" href="css/common.less"/>
+    <script type="text/javascript" src="libs/less/less.js"></script>
+    <!--商品详情接入-->
+    <script type="text/html" id="introceProduct">
+        {{each result as value i}}
+        <div class="savemoneydetail">
+            <div class="productintro">
+                {{value.productName}}
+            </div>
+            <span class="price">{{value.productPinkage}}</span>
+
+            <div class="introcFrom">
+                <span>{{value.productFrom}}</span>
+                <span>{{value.productTime}}</span>
+                <span>{{value.productTips}}</span>
+            </div>
+            <div class="detail-content">
+                <p>{{value.productInfo2}}</p>
+                {{#value.productImgSm}}
+            </div>
+            <div class="detail-img">
+                {{#value.productImgSm}}
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <!--评论模板的接入-->
+    <script type="text/html" id="savemoneycomment">
+        {{each result as value i}}
+        {{#value.productComment}}
+        {{/each}}
+    </script>
+    <title>省钱控商品详情</title>
+</head>
+<body>
+<header id="header" class="back"></header>
+
+<section id="savemonylist">
+    <div class="savemony">
+        <div class="savemoneydetail">
+            <div class="productintro">
+                西域和田枣西域和田枣西域和田枣西域和田枣西域和田枣西域和田枣西域和田枣西域和田枣
+            </div>
+            <span class="price">19.8(5件99)</span>
+
+            <div class="introcFrom">
+                <span>京东商城</span>
+                <span>10-22 1328</span>
+                <span>chenjinn/慢慢买</span>
+            </div>
+            <div class="detail-content">
+                <p>原价删的克拉克删的克拉克来得快拉拉裤回删的克拉克来得快拉拉裤回删的克拉克来得快拉拉裤回删的克拉克来得快拉拉裤回删的克拉克来得快拉拉裤回来得快拉拉裤回到家看啊旷达科技阿卡</p>
+                <img src="./images/product_info.jpg"/>
+            </div>
+            <div class="detail-img">
+                <img src="./images/product_info.jpg"/>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="savebuy">前往购买</a>
+</section>
+<section id="saveweima">
+    <img src="./images/mmbweixin2.png"/>
+</section>
+
+<section id="moneycomment">
+
+</section>
+<!--底部-->
+<footer id="footer">
+</footer>
+</body>
+
+<script type="text/javascript" src="libs/jquery/jquery.js"></script>
+<script type="text/javascript" src="libs/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script type="text/javascript" src="./js/moneyctrl_detail.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+
+</html>

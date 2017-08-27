@@ -1,0 +1,129 @@
+#nav .breadcrumb {
+  background-color: #f9f9f9;
+}
+#nav .breadcrumb li a {
+  color: #5a5a5a;
+  font-size: 16px;
+}
+#nav .breadcrumb li + li:before {
+  content: ">";
+  font-family: sumit;
+}
+#product_money_detal {
+  border-bottom: 3px solid #7a7a7a;
+  padding-bottom: 8px;
+}
+#product_money_detal .product_detal {
+  position: relative;
+}
+#product_money_detal .product_detal img {
+  display: block;
+  margin: auto;
+  width: 160px;
+  height: 160px;
+}
+#product_money_detal .product_detal p {
+  color: #000000;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 20px;
+}
+#product_money_detal .product_detal a {
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+#product_money_detal .product_detal a img {
+  width: 40px;
+  height: 40px;
+}
+#product_money_detal .buy .buy-none {
+  height: 19px;
+  background-color: #f9f9f9;
+}
+#product_money_detal .buy .money-buy a {
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: white;
+  background-color: #ff841d;
+  position: relative;
+}
+#product_money_detal .buy .money-buy a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  width: 12px;
+  height: 5px;
+  background-image: url("../images/tab_ar.png");
+  background-size: 12px 5px;
+}
+#product_money_detal .buy .detail_list .detail_list_From {
+  padding: 15px 5px;
+}
+#product_money_detal .buy .detail_list p {
+  font-size: 12px;
+  color: #a1a1a1;
+  padding: 5px 10px;
+}
+#product_money_detal .comment .conment-title {
+  width: 100%;
+  height: 40px;
+  background-color: #dbdbdb;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  color: #5a5a5a;
+}
+#product_money_detal .comment .comment-body {
+  padding: 10px 8px 5px;
+}
+#product_money_detal .comment .comment-body .conment-name {
+  color: #666695;
+  width: 100%;
+  height: 20px;
+}
+#product_money_detal .comment .comment-body .conment-name .reply-name {
+  display: block;
+  float: left;
+}
+#product_money_detal .comment .comment-body .conment-name .reply-time {
+  display: block;
+  float: right;
+}
+#product_money_detal .comment .comment-body .buy-from {
+  float: left;
+  width: 100%;
+}
+#product_money_detal .comment .comment-body .comment-content {
+  padding-top: 7px;
+  margin-bottom: 7px;
+  font-size: 16px;
+  line-height: 25px;
+  height: 80px;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+}
+#product_money_detal .comment .comment-body .reply {
+  color: #666695;
+}
+#product_money_detal .comment .more-reply {
+  background-color: #f8f8f8;
+  padding: 15px 10px 25px;
+  width: 100%;
+}
+#product_money_detal .comment .more-reply span {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #ebebeb;
+  color: #5a5a5a;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+}

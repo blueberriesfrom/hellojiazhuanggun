@@ -1,0 +1,102 @@
+#gs-detail {
+  position: relative;
+}
+#gs-detail .gs {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  display: flex;
+}
+#gs-detail .gs #shop,
+#gs-detail .gs #area {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+}
+#gs-detail .gs #shop::before,
+#gs-detail .gs #area::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  background-image: url("../images/up.png");
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#gs-detail .gs #shop.active::before {
+  background-image: url("../images/down.png");
+}
+#gs-detail .gs #area.active::before {
+  background-image: url("../images/down.png");
+}
+#gs-detail .gslist,
+#gs-detail .gslist-two {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  z-index: 99999;
+  display: none;
+  background-color: white;
+}
+#gs-detail .gslist ul,
+#gs-detail .gslist-two ul {
+  list-style: none;
+  -webkit-padding-start: 0px;
+}
+#gs-detail .gslist ul li a,
+#gs-detail .gslist-two ul li a {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  border-bottom: 1px solid #ededed;
+  padding: 10px 0 10px 30px;
+  font-size: 18px;
+  position: relative;
+}
+#gs-detail .gslist ul li .choosed::before,
+#gs-detail .gslist-two ul li .choosed::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  width: 27px;
+  height: 22px;
+  background-image: url("../images/check.png");
+  background-size: 27px 22px;
+}
+#gs-detail .gsprolist {
+  background-color: #f1f1f1;
+}
+#gs-detail .gsprolist .row {
+  padding: 5px;
+  margin-left: 0;
+  margin-right: 0;
+}
+#gs-detail .gsprolist .row .col-xs-6 {
+  padding: 0;
+}
+#gs-detail .gsprolist .row .col-xs-6 .gscontent {
+  padding: 10px 15px;
+  margin: 5px 5px;
+  background-color: white;
+}
+#gs-detail .gsprolist .row .col-xs-6 .gscontent img {
+  width: 80px;
+  height: 120px;
+  display: block;
+  margin: auto;
+}
+#gs-detail .gsprolist .row .col-xs-6 .gscontent p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+#gs-detail .gsprolist .row .col-xs-6 .gscontent span {
+  font-size: 18px;
+  color: #f8601d;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--先引入css库文件-->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css"/>
+    <!--自己写的less文件-->
+    <link rel="stylesheet/less" href="css/gsproduct.less"/>
+    <link rel="stylesheet/less" href="css/common.less"/>
+    <script type="text/javascript" src="libs/less/less.js"></script>
+    <script type="text/html" id="innershop">
+        <ul>
+            {{each result as value i}}
+            <li>
+                <a href="#" data-shop-id="{{value.shopId}}">{{value.shopName}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    </script>
+    <script type="text/html" id="innerarea">
+        <ul>
+            {{each result as value i}}
+            <li>
+                <a href="#" data-area-id="{{value.areaId}}">{{value.areaName}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    </script>
+
+    <script type="text/html" id="gsprolistcontent">
+        <div class="row">
+            {{each result as value i}}
+            <div class="col-xs-6">
+                <div class="gscontent">
+                    <img src="{{value.productImg}}"/>
+                    <p>{{value.productName}}</p>
+                    <span>{{value.productPrice}}</span>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+</script>
+    <title>凑单品</title>
+</head>
+<body>
+<!--头部-->
+<header id="header" class="back">
+</header>
+<!--导航部分-->
+
+<div id="gs-detail">
+    <div class="gs">
+        <div id="shop"></div>
+        <div id="area">华北</div>
+    </div>
+    <div class="gslist">
+      <!--  <ul>
+            <li>
+                <a href="#">京东</a>
+            </li>
+            <li>
+                <a href="#">一号店</a>
+            </li>
+            <li>
+                <a href="#" class="choosed">天猫超市</a>
+            </li>
+        </ul>-->
+    </div>
+    <div class="gslist-two">
+    </div>
+
+    <div class="gsprolist">
+    </div>
+</div>
+
+
+<!--商品列表部分-->
+
+<!--底部-->
+<footer id="footer">
+</footer>
+</body>
+<script type="text/javascript" src="libs/jquery/jquery.js"></script>
+<script type="text/javascript" src="libs/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script type="text/javascript" src="./js/gsproduct.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+
+</html>

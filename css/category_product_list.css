@@ -1,0 +1,82 @@
+#catergory-product {
+  width: 100%;
+}
+#catergory-product > .recommend-list {
+  padding: 15px;
+}
+#catergory-product > .recommend-list > .media > .media-left > a {
+  display: block;
+}
+#catergory-product > .recommend-list > .media > .media-left > a img {
+  width: 99px;
+  height: 100px;
+}
+#catergory-product > .recommend-list > .media > .media-body {
+  padding-bottom: 15px;
+}
+#catergory-product > .recommend-list > .media > .media-body > .media-heading {
+  padding-top: 10px;
+  font-size: 16px;
+  color: #333333;
+  height: 75px;
+  overflow: hidden;
+}
+#catergory-product > .recommend-list > .media > .media-body > .media-heading p {
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+#catergory-product > .recommend-list > .media > .media-body > .media-heading > span {
+  color: #ff841d;
+}
+#catergory-product > .recommend-list > .media > .media-body > .from {
+  color: #a1a1a1;
+  font-size: 12px;
+}
+#catergory-product > .recommend-list > .media > .media-body > .from > .from-id {
+  margin-right: 3px;
+}
+#catergory-product > .recommend-list > .media > .media-body > .from > .comment {
+  position: relative;
+  float: right;
+  color: #a1a1a1;
+  width: 85px;
+  text-align: center;
+  line-height: 20px;
+  white-space: nowrap;
+}
+#catergory-product > .recommend-list > .media > .media-body > .from .comment::before {
+  content: "";
+  position: absolute;
+  right: 95px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/ic_comment.png");
+  background-size: 15px;
+  background-repeat: no-repeat;
+}
+#catergory-product .page-list {
+  padding: 15px 10px 20px;
+  display: flex;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+#catergory-product .page-list div {
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin: 10px 15px 0;
+  padding: 8px 8px;
+  flex: 1;
+  font-size: 16px;
+  flex-wrap: nowrap;
+}
+#catergory-product .page-list #page-select {
+  flex: 1;
+  border: 0;
+}
+#catergory-product .page-list #page-select select option {
+  width: 100%;
+  height: 44px;
+}

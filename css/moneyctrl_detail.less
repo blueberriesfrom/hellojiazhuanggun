@@ -1,0 +1,145 @@
+@import url(color.less);
+
+#savemonylist{
+  padding: 15px 10px;
+  .savemony{
+    .savemoneydetail{
+      .productintro{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px;
+      }
+      .price{
+        color: @background-color;
+        font-size: 16px;
+        line-height: 30px;
+      }
+      .introcFrom{
+        color: #999999;
+        padding-bottom: 10px;
+        span{
+          margin-right: 10px;
+        }
+      }
+      .detail-content{
+        display: flex;
+        overflow: hidden;
+        p{
+          padding-right: 15px;
+          flex: 1;
+          font-size: 18px;
+          line-height: 26px;
+          height: 220px;
+        }
+        img{
+          float: right;
+          width: 120px;
+          height: 220px;
+        }
+      }
+      .detail-img{
+        margin-bottom: 20px;
+        padding-top: 30px;
+        img{
+          width: 220px;
+          height: 220px;
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+  }
+  .savebuy{
+    display: block;
+    width: 100%;
+    background-color: @background-color;
+    color: white;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+}
+
+
+#saveweima{
+  border-top: 20px solid #f2f2f2;
+  border-bottom: 20px solid #f2f2f2;
+  img{
+    width: 100%;
+    height: 120px;
+  }
+}
+#moneycomment{
+  >.cu-content-pl{
+    >.tit{
+      font-size: 18px;
+      padding: 8px;
+    }
+    >.reply{
+      padding: 8px;
+      >.form{
+        border: 1px solid #eceae8;
+        #ctl00_ContentBody_txt_nr{
+          width: 100%;
+          height: 80px;
+          resize: none;
+          outline: 0;
+          border: none;
+        }
+        .ctrl{
+          background-color: #fbfbfb;
+          overflow: hidden;
+          border-top: 1px solid #f2f2f2;
+          #ctl00_ContentBody_Button1{
+            float: right;
+            width: 100px;
+            height: 40px;
+            background-color: @background-color;
+            color: white;
+            outline: none;
+            border: 0;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    >.list{
+      ul{
+        padding-left: 10px;
+        list-style: none;
+        >.ui-border-b{
+          display: flex;
+          margin-bottom: 20px;
+          margin-right: 10px;
+          .userimg{
+            float: left;
+            img{
+              width: 40px;
+              height: 40px;
+            }
+          }
+          .con{
+            float: left;
+            margin-left: 20px;
+            flex:1;
+            .name{
+              .username{
+                float: left;
+              }
+              .time{
+                float: right;
+              }
+            }
+            .content{
+              padding-top: 10px;
+              height: 50px;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+}

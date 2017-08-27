@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--先引入css库文件-->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css"/>
+    <!--自己写的less文件-->
+    <link rel="stylesheet/less" href="css/category.less"/>
+    <link rel="stylesheet/less" href="css/common.less"/>
+    <!--引入less.js这个文件会帮我们进行less文件编译,生成css内容less.js
+    这个文件的引入,一定要在我们自己写的less文件之后-->
+    <!--浏览器根本识别不了less文件,需要进行编译-->
+    <!--1,使用less.js进行编译-->
+    <!--2,使用编辑工具webstorm带的编译功能-->
+    <script type="text/javascript" src="libs/less/less.js"></script>
+    <script type="text/html" id="catergory-list">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            {{each result as value i}}
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                           href="#collapse{{i}}" aria-expanded="true"
+                           aria-controls="collapse{{i}}" data-product-titleid="{{value.titleId}}">
+                            {{value.title}}
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse{{i}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body"></div>  <!--不能换行,否则有空字符串-->
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+
+    <script type="text/html" id="catergory-list-product">
+        <div class="row">
+        {{each result as value i}}
+            <div class="col-xs-4">
+                <a href="category_product_list.html?categoryid={{value.categoryId}}">{{value.category}}</a>
+            </div>
+        {{/each}}
+        </div>
+    </script>
+
+    <title>比价搜索</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+</header>
+<!--搜索-->
+<section id="search">
+</section>
+<!--下拉列表-->
+<section id="category">
+   <!-- <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                       href="#collapseOne" aria-expanded="true"
+                       aria-controls="collapseOne">
+                        标题1
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <a href="#">产品介绍</a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="#">产品介绍</a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="#">产品介绍</a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="#">产品介绍</a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="#">产品介绍</a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="#">产品介绍</a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="#">产品介绍</a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="#">产品介绍</a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="#">产品介绍</a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a href="#">产品介绍</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                       href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        标题2
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                       href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        标题3
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                        <div class="col-xs-4">产品介绍</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+</section>
+<!--底部-->
+<footer id="footer">
+</footer>
+</body>
+<!--bootstrap.js是依赖于jquery.js所以需先要引入jquery.js
+bootstrap.css jquery.js bootstrap.js这个三个文件顺序不能错
+jquery.js bootstrap.js 这两个文件的引入最好放在文档的末尾处
+-->
+<script type="text/javascript" src="libs/jquery/jquery.js"></script>
+<script type="text/javascript" src="libs/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="./libs/template/template.js"></script>
+<script type="text/javascript" src="./js/category.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+
+</html>

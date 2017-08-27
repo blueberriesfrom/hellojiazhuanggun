@@ -1,0 +1,36 @@
+#couponproduct {
+  padding-top: 20px;
+}
+#couponproduct .media {
+  padding: 10px 10px;
+}
+#couponproduct .media .media-left a img {
+  width: 100px;
+  height: 100px;
+}
+#couponproduct .media .media-body {
+  position: relative;
+}
+#couponproduct .media .media-body::before {
+  content: "";
+  width: 12px;
+  height: 18px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: tranlateY(-50%);
+  background-image: url("../images/right.png");
+}
+#couponproduct .media .media-body .media-heading {
+  font-size: 18px;
+  height: 50px;
+  line-height: 25px;
+  overflow: hidden;
+}
+#couponproduct .media .media-body span {
+  font-size: 14px;
+  line-height: 30px;
+}
+#couponproduct .media .media-body .usetime {
+  font-size: 16px;
+}

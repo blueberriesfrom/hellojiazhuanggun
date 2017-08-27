@@ -1,0 +1,124 @@
+@import url(color.less);
+#menu {
+  overflow: hidden;
+  padding: 15px 0 0 15px;
+    > .row {
+      margin-right: 0;
+      margin-left: -15px;
+      .col-xs-3 {
+        min-height:0;
+       >a{
+         display: block;
+         > img {
+           display: block;
+           width: 50px;
+           height: 50px;
+           margin: auto;
+         }
+         > p {
+           text-align: center;
+           color: @font-color;
+         }
+       }
+
+      }
+
+  }
+}
+#recommend {
+  width: 100%;
+  > .recommend-title {
+    background-color: @background-color;
+    height: 35px;
+    padding: 0 15px;
+    p {
+      line-height: 35px;
+      color: white;
+      font-size: 20px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      right: 15px;
+      width: 23px;
+      height: 23px;
+      background-image: url("../images/more.png");
+      background-size: 23px;
+      margin-top: 5px;
+    }
+  }
+
+  > .recommend-list {
+    padding: 15px;
+    > .media {
+      > .media-left {
+        > a {
+          display: block;
+          img {
+            width: 99px;
+            height: 100px;
+          }
+        }
+      }
+      > .media-body {
+        padding-bottom: 15px;
+        > .media-heading {
+          padding-top: 10px;
+          font-size: 16px;
+          color: @font-color;
+          height: 75px;
+          overflow: hidden;
+          > span {
+            color: @background-color;
+          }
+        }
+        > .from {
+          color: @from-color;
+          font-size: 12px;
+          > .from-id {
+            margin-right: 3px;
+          }
+          > .comment {
+            position: relative;
+            float: right;
+            color: @from-color;
+            width: 80px;
+            text-align: center;
+            line-height: 20px;
+          }
+          .comment::before {
+            content: "";
+            position: absolute;
+            right: 75px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 15px;
+            background-image: url("../images/ic_comment.png");
+            background-size: 15px;
+            background-repeat: no-repeat;
+          }
+        }
+
+      }
+    }
+  }
+  > .recommend-more {
+    padding: 10px 10px 20px;
+    background-color: #f2f2f2;
+    > a {
+      display: block;
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      color: #5a5a5a;
+      background-color: #f8d8d8;
+      margin: auto;
+      border-radius: 5px;
+      line-height: 30px;
+    }
+  }
+}
+
+
+
